@@ -1,0 +1,165 @@
+.eduplay-header {
+    background: linear-gradient(180deg, #ffe4f3, #ffd6ec); /* gradasi pastel pink */
+    padding: 60px 20px;
+    border-bottom: 4px dotted #f7a8c7; /* garis bawah dot-dot pastel pink */
+    position: relative;
+    overflow: hidden;
+}
+
+.cloud-bg {
+    background: url('https://www.transparenttextures.com/patterns/white-wall-3.png'); /* pattern awan halus */
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.title {
+    font-size: 3.2rem;
+    color: #8c6bbd; /* ungu pastel lucu */
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    margin-bottom: 15px;
+    text-shadow: 1px 1px #fff;
+}
+
+.subtitle {
+    font-size: 1.3rem;
+    color: #cc80a2;
+    font-style: italic;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+/* Bonus dekorasi lucu */
+.eduplay-header::before {
+    content: "🐱";
+    font-size: 2.5rem;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    animation: kittybounce 1.5s infinite;
+}
+
+.eduplay-header::after {
+    content: "🌈";
+    font-size: 2.5rem;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    animation: rainbowspin 3s linear infinite;
+}
+
+@keyframes kittybounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+}
+
+@keyframes rainbowspin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.project-showcase {
+    background-color: #fff6fb;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.project-showcase h2 {
+    font-size: 2.2rem;
+    color: #9d69b9;
+    margin-bottom: 30px;
+}
+
+.project-card {
+    background-color: #ffeef8;
+    border: 2px dotted #f7a8c7;
+    border-radius: 20px;
+    display: inline-block;
+    padding: 20px;
+    max-width: 300px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.08);
+}
+
+.project-img {
+    width: 100%;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.project-desc {
+    font-size: 1rem;
+    color: #b56991;
+    margin-bottom: 10px;
+}
+
+.btn-view {
+    display: inline-block;
+    background-color: #f7a8c7;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-view:hover {
+    background-color: #e07aa9;
+}
+
+.about-alira {
+    background-color: #fff9fc;
+    padding: 50px 20px;
+    text-align: center;
+    color: #a5669c;
+}
+
+.about-alira h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.about-alira p {
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto;
+    font-style: italic;
+}
+
+.corner-cat {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 3rem;
+    animation: paw-wave 2s infinite;
+    cursor: pointer;
+}
+
+@keyframes paw-wave {
+    0%, 100% { transform: rotate(0deg); }
+    25% { transform: rotate(10deg); }
+    50% { transform: rotate(-10deg); }
+    75% { transform: rotate(10deg); }
+}
+
+body {
+    background: url('https://www.transparenttextures.com/patterns/cats.png');
+    background-color: #fff6fb;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+.contact-me {
+    background-color: #ffeef8;
+    text-align: center;
+    padding: 40px;
+    color: #a35f8d;
+}
+
+.contact-me a {
+    color: #d66fa3;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.contact-me a:hover {
+    text-decoration: underline;
+}
